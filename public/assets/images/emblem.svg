@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" class="gov-emblem" aria-label="Official Institutional Emblem Placeholder">
+    <defs>
+        <linearGradient id="emblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#062B52"/>
+            <stop offset="100%" stop-color="#031C36"/>
+        </linearGradient>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#D97706"/>
+            <stop offset="100%" stop-color="#B45309"/>
+        </linearGradient>
+    </defs>
+    <!-- Outer Decorative Ring -->
+    <circle cx="60" cy="60" r="56" fill="none" stroke="url(#emblemGrad)" stroke-width="2.5" stroke-dasharray="2, 2.5"/>
+    <circle cx="60" cy="60" r="51" fill="none" stroke="url(#emblemGrad)" stroke-width="1.5"/>
+    <circle cx="60" cy="60" r="47" fill="#F8FAFC" stroke="url(#emblemGrad)" stroke-width="1"/>
+
+    <!-- Symmetrical Laurel / Wheat Leaves on Sides -->
+    <g fill="#0A66D6" opacity="0.85">
+        <!-- Left Side Leaves -->
+        <path d="M26 62 C23 55 25 48 30 46 C30 52 28 58 26 62 Z"/>
+        <path d="M28 50 C26 43 30 38 34 37 C34 43 31 48 28 50 Z"/>
+        <path d="M33 39 C33 32 38 29 42 29 C40 35 37 39 33 39 Z"/>
+        <path d="M27 74 C23 68 24 61 28 60 C29 66 28 71 27 74 Z"/>
+        <path d="M31 84 C28 78 30 72 34 72 C34 77 32 82 31 84 Z"/>
+
+        <!-- Right Side Leaves -->
+        <path d="M94 62 C97 55 95 48 90 46 C90 52 92 58 94 62 Z"/>
+        <path d="M92 50 C94 43 90 38 86 37 C86 43 89 48 92 50 Z"/>
+        <path d="M87 39 C87 32 82 29 78 29 C80 35 83 39 87 39 Z"/>
+        <path d="M93 74 C97 68 96 61 92 60 C91 66 92 71 93 74 Z"/>
+        <path d="M89 84 C92 78 90 72 86 72 C86 77 88 82 89 84 Z"/>
+    </g>
+
+    <!-- Center Institutional Columns / Edifice -->
+    <!-- Base Platform -->
+    <rect x="42" y="78" width="36" height="4" rx="1" fill="url(#emblemGrad)"/>
+    <rect x="44" y="75" width="32" height="3" rx="1" fill="url(#emblemGrad)"/>
+    
+    <!-- Three Classical Columns representing Pillars of Governance -->
+    <rect x="47" y="47" width="5" height="28" rx="0.5" fill="url(#emblemGrad)"/>
+    <rect x="57.5" y="44" width="5" height="31" rx="0.5" fill="url(#emblemGrad)"/>
+    <rect x="68" y="47" width="5" height="28" rx="0.5" fill="url(#emblemGrad)"/>
+
+    <!-- Capital / Header -->
+    <path d="M44 45 L76 45 L74 42 L46 42 Z" fill="url(#emblemGrad)"/>
+    <!-- Pediment Triangular Arch -->
+    <path d="M42 42 L60 27 L78 42 Z" fill="url(#emblemGrad)"/>
+    <circle cx="60" cy="36" r="2.5" fill="#D97706"/>
+
+    <!-- Central Symmetrical Sun / Wheel Motif in Base -->
+    <g transform="translate(60, 60)">
+        <circle cx="0" cy="0" r="5" fill="none" stroke="#D97706" stroke-width="1.2"/>
+        <circle cx="0" cy="0" r="1.5" fill="#D97706"/>
+    </g>
+
+    <!-- Bottom Ribbon / Plinth -->
+    <path d="M38 88 Q60 93 82 88 L85 94 Q60 100 35 94 Z" fill="url(#emblemGrad)"/>
+    <circle cx="60" cy="94" r="1.5" fill="#D97706"/>
+</svg>

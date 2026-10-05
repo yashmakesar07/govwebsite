@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="dSky" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F172A"/><stop offset="100%" stop-color="#1E3A8A"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#dSky)"/>
+  <!-- Digital Governance Circuit & Network Hub -->
+  <g stroke="#38BDF8" stroke-width="1.5" opacity="0.5">
+    <circle cx="300" cy="180" r="90" fill="none"/>
+    <circle cx="300" cy="180" r="140" fill="none" stroke-dasharray="6,8"/>
+    <line x1="300" y1="40" x2="300" y2="320"/>
+    <line x1="160" y1="180" x2="440" y2="180"/>
+  </g>
+  <!-- Central Digital Infrastructure Core -->
+  <circle cx="300" cy="180" r="40" fill="#0284C7"/>
+  <rect x="285" y="165" width="30" height="30" rx="4" fill="#FFFFFF"/>
+  <path d="M292 180 L298 186 L308 174" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+</svg>

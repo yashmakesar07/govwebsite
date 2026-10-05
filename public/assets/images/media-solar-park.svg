@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <defs>
+    <linearGradient id="bg_solar-park" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#021123"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" fill="url(#bg_solar-park)"/>
+  <!-- Decorative Technical Grid Overlay -->
+  <path d="M 0 100 L 600 100 M 0 200 L 600 200 M 0 300 L 600 300 M 150 0 L 150 420 M 300 0 L 300 420 M 450 0 L 450 420" stroke="#FFFFFF" stroke-width="0.5" opacity="0.1"/>
+  <!-- Institutional Frame -->
+  <rect x="25" y="25" width="550" height="370" rx="8" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity="0.4"/>
+  <!-- Center Badge / Watermark -->
+  <circle cx="300" cy="180" r="50" fill="#0A66D6" opacity="0.2"/>
+  <text x="300" y="175" font-family="sans-serif" font-size="28" font-weight="bold" fill="#F8FAFC" text-anchor="middle">OFFICIAL RECORD</text>
+  <text x="300" y="205" font-family="sans-serif" font-size="15" fill="#93C5FD" text-anchor="middle">50MW Public Solar Project</text>
+  <rect x="40" y="340" width="520" height="40" rx="4" fill="#000000" opacity="0.6"/>
+  <text x="55" y="365" font-family="sans-serif" font-size="13" fill="#E2E8F0">Decarbonization initiative for government offices</text>
+</svg>

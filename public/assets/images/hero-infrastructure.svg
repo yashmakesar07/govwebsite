@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#031C36" />
+      <stop offset="45%" stop-color="#062B52" />
+      <stop offset="85%" stop-color="#0E487F" />
+      <stop offset="100%" stop-color="#1E65A8" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#93C5FD" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F243B" />
+      <stop offset="100%" stop-color="#061625" />
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="600" fill="url(#skyGrad)" />
+
+  <!-- Subtle Atmospheric Stars / Clean Night Aura -->
+  <g fill="#FFFFFF" opacity="0.4">
+    <circle cx="200" cy="80" r="1.5" />
+    <circle cx="450" cy="50" r="1" />
+    <circle cx="780" cy="110" r="1.2" />
+    <circle cx="1100" cy="65" r="1.5" />
+    <circle cx="1380" cy="95" r="1.2" />
+    <circle cx="1520" cy="45" r="1" />
+  </g>
+
+  <!-- Distant City Skyline Silhouettes -->
+  <path d="M 0 420 L 50 420 L 50 360 L 90 360 L 90 420 L 140 420 L 140 330 L 180 330 L 180 420 L 260 420 L 260 380 L 310 380 L 310 420 L 450 420 L 450 340 L 520 340 L 520 420 L 680 420 L 680 390 L 740 390 L 740 420 L 850 420 L 850 350 L 920 350 L 920 420 L 1100 420 L 1100 320 L 1180 320 L 1180 420 L 1320 420 L 1320 360 L 1400 360 L 1400 420 L 1600 420 L 1600 600 L 0 600 Z" fill="#0B2B4C" opacity="0.6" />
+
+  <!-- Modern Metro / Flyover Viaduct Across Midground -->
+  <g opacity="0.85">
+    <!-- Elevated Viaduct Deck -->
+    <path d="M 0 440 Q 800 425 1600 440 L 1600 455 Q 800 440 0 455 Z" fill="url(#bridgeGrad)" />
+    <!-- Piers (Pillars) -->
+    <rect x="220" y="445" width="28" height="115" rx="3" fill="#1E293B" />
+    <rect x="520" y="443" width="28" height="117" rx="3" fill="#1E293B" />
+    <rect x="820" y="440" width="30" height="120" rx="3" fill="#334155" />
+    <rect x="1120" y="443" width="28" height="117" rx="3" fill="#1E293B" />
+    <rect x="1420" y="445" width="28" height="115" rx="3" fill="#1E293B" />
+    <!-- Cable Stayed Bridge Pylon in Center-Right -->
+    <polygon points="980,240 1000,240 1015,442 965,442" fill="#E2E8F0" opacity="0.9" />
+    <!-- Cables -->
+    <line x1="990" y1="260" x2="840" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+    <line x1="990" y1="280" x2="880" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+    <line x1="990" y1="310" x2="930" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+    <line x1="1000" y1="260" x2="1140" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+    <line x1="1000" y1="280" x2="1100" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+    <line x1="1000" y1="310" x2="1050" y2="440" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7" />
+  </g>
+
+  <!-- Landmark Government Secretariat Building (Right Half) -->
+  <g transform="translate(920, 160)">
+    <!-- Central Dome / Rotunda -->
+    <path d="M 320 150 C 320 80, 440 80, 440 150 Z" fill="#1E3A5F" stroke="#3B82F6" stroke-width="2" />
+    <rect x="375" y="60" width="10" height="25" fill="#E2E8F0" />
+    <circle cx="380" cy="55" r="5" fill="#D97706" />
+
+    <!-- Main Edifice -->
+    <rect x="180" y="150" width="400" height="230" rx="4" fill="#0A1D33" stroke="#1E40AF" stroke-width="2" />
+    
+    <!-- Grand Colonnade Columns -->
+    <g fill="#E2E8F0" opacity="0.9">
+      <rect x="210" y="170" width="12" height="190" rx="2" />
+      <rect x="245" y="170" width="12" height="190" rx="2" />
+      <rect x="280" y="170" width="12" height="190" rx="2" />
+      <rect x="315" y="170" width="12" height="190" rx="2" />
+      <rect x="435" y="170" width="12" height="190" rx="2" />
+      <rect x="470" y="170" width="12" height="190" rx="2" />
+      <rect x="505" y="170" width="12" height="190" rx="2" />
+      <rect x="540" y="170" width="12" height="190" rx="2" />
+    </g>
+
+    <!-- Glass Facade Behind Columns -->
+    <rect x="200" y="180" width="360" height="170" fill="url(#glassGrad)" />
+    
+    <!-- Glowing Institutional Windows -->
+    <g fill="#93C5FD" opacity="0.8">
+      <rect x="350" y="185" width="60" height="20" rx="2" />
+      <rect x="350" y="215" width="60" height="20" rx="2" />
+      <rect x="350" y="245" width="60" height="20" rx="2" />
+      <rect x="350" y="275" width="60" height="20" rx="2" />
+      <rect x="350" y="305" width="60" height="40" rx="2" fill="#F8FAFC" />
+    </g>
+  </g>
+
+  <!-- Foreground Landscaped Boulevard & Lawns -->
+  <rect x="0" y="520" width="1600" height="80" fill="url(#groundGrad)" />
+  <rect x="0" y="520" width="1600" height="12" fill="#15803D" opacity="0.8" />
+  
+  <!-- Boulevard Lights -->
+  <g fill="#FDE047">
+    <circle cx="100" cy="510" r="3" />
+    <circle cx="300" cy="510" r="3" />
+    <circle cx="500" cy="510" r="3" />
+    <circle cx="700" cy="510" r="3" />
+    <circle cx="900" cy="510" r="3" />
+    <circle cx="1100" cy="510" r="3" />
+    <circle cx="1300" cy="510" r="3" />
+    <circle cx="1500" cy="510" r="3" />
+  </g>
+</svg>
