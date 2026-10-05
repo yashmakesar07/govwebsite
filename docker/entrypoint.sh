@@ -8,11 +8,32 @@ fi
 
 PORT=${PORT:-8080}
 
-echo "--> Configuring Nginx for port ${PORT}..."
-sed -i "s/listen [0-9]\+;/listen ${PORT};/g" /etc/nginx/sites-available/default
+echo "--> Configuring Nginx for port ${PORT} (IPv4 and IPv6 dual-stack)..."
+sed -i "s/8080/${PORT}/g" /etc/nginx/sites-available/default
+rm -f /etc/nginx/sites-enabled/default
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
-# Clean any bootstrap cache from dev environments
+# Clean any bootstrap cache from dev/build environments
 rm -f /var/www/html/bootstrap/cache/*.php
+
+# Ensure .env exists so Laravel can load and store configuration
+if [ ! -f /var/www/html/.env ]; then
+    if [ -f /var/www/html/.env.example ]; then
+        echo "--> Creating .env from .env.example..."
+        cp /var/www/html/.env.example /var/www/html/.env
+    else
+        touch /var/www/html/.env
+    fi
+fi
+
+# Ensure APP_KEY exists (generate one if missing in environment and .env)
+if [ -z "$APP_KEY" ]; then
+    echo "--> Checking APP_KEY..."
+    if ! grep -q "^APP_KEY=base64:" /var/www/html/.env 2>/dev/null; then
+        echo "--> Generating application encryption key..."
+        php artisan key:generate --force
+    fi
+fi
 
 # Ensure database directory and SQLite file exist
 mkdir -p /var/www/html/database
@@ -39,8 +60,9 @@ chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 # Discover packages for production (--no-dev)
 php artisan package:discover --ansi || true
 
-# Ensure storage symlink
+# Recreate storage symlink cleanly
 echo "--> Creating storage symlink..."
+rm -rf /var/www/html/public/storage
 php artisan storage:link --force || true
 
 # Run migrations & seeders
@@ -66,6 +88,9 @@ fi
 echo "--> Starting PHP-FPM..."
 php-fpm -D
 
+# Test Nginx configuration
+nginx -t
+
 # Start Nginx in foreground
-echo "--> Web server listening on 0.0.0.0:${PORT}"
+echo "--> Web server listening on [::]:${PORT} and 0.0.0.0:${PORT}"
 exec nginx -g "daemon off;"
